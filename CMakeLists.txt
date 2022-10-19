@@ -279,6 +279,34 @@ set(TALIB_func_src
 	ta-lib-src/src/ta_func/ta_WMA.c
 )
 
+set(TALIB_test_src
+	ta-lib-src/src/tools/ta_regtest/ta_regtest.c
+	ta-lib-src/src/tools/ta_regtest/test_data.c
+	ta-lib-src/src/tools/ta_regtest/test_util.c
+	ta-lib-src/src/tools/ta_regtest/test_abstract.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_adx.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_mom.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_sar.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_rsi.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_candlestick.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_per_ema.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_per_hlc.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_stoch.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_macd.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_minmax.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_per_hlcv.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_1in_1out.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_1in_2out.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_per_ohlc.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_stddev.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_bbands.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_ma.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_po.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_per_hl.c
+	ta-lib-src/src/tools/ta_regtest/ta_test_func/test_trange.c
+	ta-lib-src/src/tools/ta_regtest/test_internals.c
+)
+
 set(TALIB_install_headers
 	${CMAKE_BINARY_DIR}/ta-lib-src/include/ta_abstract.h
 	${CMAKE_BINARY_DIR}/ta-lib-src/include/ta_common.h
