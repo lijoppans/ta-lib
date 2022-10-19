@@ -55,7 +55,7 @@ endfunction()
 #######################
 find_package(Color)
 option(CMAKE_BUILD_TYPE "Release/Debug build" RELEASE)
-option(BUILD_TESTS "Build regression tests" ON)
+option(BUILD_TESTS "Build regression tests" OFF)
 
 if(DEFINED ENV{DEBUG})
 	set(CMAKE_BUILD_TYPE DEBUG)
